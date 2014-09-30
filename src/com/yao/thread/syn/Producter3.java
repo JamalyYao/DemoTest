@@ -10,7 +10,7 @@ public class Producter3 implements Runnable {
 	
 	@Override
 	public void run() {
-		System.out.println("Éú²úÕß¿ªÊ¼²úÉúÕûÊı");
+		System.out.println("ç”Ÿäº§è€…å¼€å§‹äº§ç”Ÿæ•´æ•°");
 		for (int i = 0 ; i < 10 ; i++) {
 			try {
 				Thread.sleep((int)(Math.random()*3000));
