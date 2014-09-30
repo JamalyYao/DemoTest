@@ -8,7 +8,7 @@ public class Consumer implements Runnable {
 	}
 	@Override
 	public void run() {
-		System.out.println("Ïû·Ñ¶¼¿ÉÒÔÏû·ÑÕûÊı");
+		System.out.println("æ¶ˆè´¹éƒ½å¯ä»¥æ¶ˆè´¹æ•´æ•°");
 		for (int i = 0 ; i < 10 ; i++) {
 			try {
 				Thread.sleep((int)(Math.random()*3000));
