@@ -1,0 +1,9 @@
+HTTP/1.0 200 OK
+Server: Ronsoft Dummy Server
+Content-Length: 14
+Content-Type: text/plain
+
+AA
+BB
+DD
+!@
