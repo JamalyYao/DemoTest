@@ -16,7 +16,7 @@ public class ListRemoveTest2 {
 		list.add("F");
 		list.add("F");
 
-		//ÓÃIteratorÑ­»·É¾³ı
+		
 		for (Iterator<String> it = list.iterator();it.hasNext();){
 			if(!"A".equals(it.next())){
 				it.remove();
