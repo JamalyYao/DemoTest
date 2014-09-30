@@ -18,7 +18,7 @@ public class DemoMeaning {
 		Method method = c.getMethod("toString");
 		
 		if(method.isAnnotationPresent(Meaning.class)){
-			Meaning ann = method.getAnnotation(Meaning.class);//ªÒ»°annotation
+			Meaning ann = method.getAnnotation(Meaning.class);//Ëé∑Âèñannotation
 			System.out.println(ann.value());
 		}
 	}
