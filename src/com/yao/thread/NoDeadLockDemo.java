@@ -24,7 +24,7 @@ class Resource1 {
 			try {
 				if(isGetMyLock && isGetResourceLock){
 					resource.doSome();
-					System.out.printf("%s ÕûºÏÁË %s µÄ×ÊÔ´¡£%n", this.name, resource.getName());
+					System.out.printf("%s æ•´åˆäº† %s çš„èµ„æºã€‚%n", this.name, resource.getName());
 					break;
 				}
 			} catch (Exception e) {
