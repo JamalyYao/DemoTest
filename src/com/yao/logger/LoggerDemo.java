@@ -7,12 +7,12 @@ public class LoggerDemo {
 
 	public static void main(String[] args) {
 		Logger log = Logger.getLogger(LoggerDemo.class.getName());
-		log.log(Level.SEVERE, "Severe 信息");
-		log.log(Level.WARNING, "Warning 信息");
-		log.log(Level.INFO, "Info 信息");
+		log.log(Level.SEVERE, "Severe 淇℃伅");
+		log.log(Level.WARNING, "Warning 淇℃伅");
+		log.log(Level.INFO, "Info 淇℃伅");
 		
-		log.log(Level.CONFIG,"Config 信息");
-		log.log(Level.FINE, "Fine 信息");
+		log.log(Level.CONFIG,"Config 淇℃伅");
+		log.log(Level.FINE, "Fine 淇℃伅");
 	}
 
 }
