@@ -13,7 +13,7 @@ public class MessageResourceTest2 {
 		ResourceBundle enRb = ResourceBundle.getBundle("Message", en);
 		ResourceBundle zhRb = ResourceBundle.getBundle("Message", zh);
 		ResourceBundle frRb = ResourceBundle.getBundle("Message", fr);
-		//´ø²ÎÊý
+		
 		System.out.println(MessageFormat.format(enRb.getString("info"),"Jamaly"));
 		System.out.println(zhRb.getString("info"));
 		System.out.println(frRb.getString("info"));
