@@ -14,7 +14,7 @@ public class Tortoise implements Runnable {
 			try {
 				Thread.sleep(1*1000);
 				curStep++;
-				System.out.printf("ÎÚ¹êÅÜÁË %d ²½ %n",curStep);
+				System.out.printf("ä¹Œé¾Ÿè·‘äº† %n",curStep);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
