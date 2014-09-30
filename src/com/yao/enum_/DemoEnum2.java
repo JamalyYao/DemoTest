@@ -2,7 +2,7 @@ package com.yao.enum_;
 
 enum Color2{
 	
-	Red("ºìÉ«"),Green("ÇàÉ«"),Blue("À¶É«");
+	Red("çº¢è‰²"),Green("é’è‰²"),Blue("è“è‰²");
 	
 	private Color2(String name){
 		this.name = name;
@@ -29,7 +29,7 @@ public class DemoEnum2 {
 		}
 		
 		System.out.println(Color.Blue);
-		Color2.Blue.setName("À¶É«µÄ");
+		Color2.Blue.setName("è“è‰²çš„");
 		System.out.println(Color2.Blue.getName());
 	}
 
