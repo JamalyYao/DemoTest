@@ -15,16 +15,16 @@ public class DemoEnum {
 	public static void print(Color color){
 		switch (color) {
 		case Red:
-			System.out.println("紅色");
+			System.out.println("绾㈣壊");
 			break;
 		case Green:
-			System.out.println("青色");
+			System.out.println("闈掕壊");
 			break;
 		case Blue:
-			System.out.println("蓝色");
+			System.out.println("钃濊壊");
 			break;
 		default:
-			System.out.println("未知颜色");
+			System.out.println("鏈煡棰滆壊");
 			break;
 		}
 	}
