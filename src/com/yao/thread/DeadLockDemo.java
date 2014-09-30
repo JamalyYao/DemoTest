@@ -15,7 +15,7 @@ class Resource {
 
 	synchronized void cooperate(Resource resource) {
 		resource.doSome();
-		System.out.printf("%s ÕûºÏÁË %s µÄ×ÊÔ´¡£%n", this.name, resource.getName());
+		System.out.printf("%s æ•´åˆäº† %s çš„èµ„æºã€‚%n", this.name, resource.getName());
 	}
 
 	public String getName() {
