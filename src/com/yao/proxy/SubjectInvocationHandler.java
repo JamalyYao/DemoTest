@@ -14,7 +14,7 @@ public class SubjectInvocationHandler implements InvocationHandler {
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		long startTime = System.currentTimeMillis();
 		method.invoke(delegate, args);
-		System.out.println("花费时间："+(System.currentTimeMillis() - startTime));
+		System.out.println("takes time:銆�"+(System.currentTimeMillis() - startTime));
 		return null;
 	}
 
