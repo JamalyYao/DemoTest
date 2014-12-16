@@ -75,7 +75,7 @@ public class MyGeneric {
 		System.out.println(kv);
 		
 		//funObj(piStr);
-		fun(piStr);//Í¨Åä·û
+		fun(piStr);//é€šé…ç¬¦
 	}
 	
 	public static void funObj(Point<Object> p){
@@ -83,7 +83,7 @@ public class MyGeneric {
 	}
 	
 	public static void fun(Point<?> p){
-		//Èç¹ûÊ¹ÓÃ£¿ÒâÎ¶×Å¿ÉÒÔ½ÓÊÜÈÎÒâµÄÄÚÈİ£¬µ«ÊÇ´ËÄÚÈİÈ´ÎŞ·¨Ö±½ÓÊ¹ÓÃ<?>ĞŞÊÎµÄ·ºĞÍ¶ÔÏó½øĞĞĞŞ¸Ä¡£
+		//å¦‚æœä½¿ç”¨ï¼Ÿæ„å‘³ç€å¯ä»¥æ¥å—ä»»æ„çš„å†…å®¹ï¼Œä½†æ˜¯æ­¤å†…å®¹å´æ— æ³•ç›´æ¥ä½¿ç”¨<?>ä¿®é¥°çš„æ³›å‹å¯¹è±¡è¿›è¡Œä¿®æ”¹ã€‚
 		//p.setVar("ss");
 		System.out.println(p.getVar());
 	}

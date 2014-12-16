@@ -4,9 +4,9 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
 /**
- * Override¶¨Òå²ÉÓÃµÄÊÇ@Retention(RetentionPolicy.SOURCE) Ö»ÄÜÔÚÔ´ÎÄ¼şÖĞ³öÏÖ
- * Deprecated¶¨Òå²ÉÓÃµÄÊÇ@Retention(RetentionPolicy.RUNTIME)£¬¿ÉÒÔÔÚÖ´ĞĞÊ±³öÏÖ
- * SuppressWarnings¶¨Òå²ÉÓÃµÄÊÇ@Retention(RetentionPolicy.SOURCE)£¬Ö»ÄÜÔÚÔ´ÎÄ¼şÖĞ³öÏÖ
+ * Overrideå®šä¹‰é‡‡ç”¨çš„æ˜¯@Retention(RetentionPolicy.SOURCE) åªèƒ½åœ¨æºæ–‡ä»¶ä¸­å‡ºç°
+ * Deprecatedå®šä¹‰é‡‡ç”¨çš„æ˜¯@Retention(RetentionPolicy.RUNTIME)ï¼Œå¯ä»¥åœ¨æ‰§è¡Œæ—¶å‡ºç°
+ * SuppressWarningså®šä¹‰é‡‡ç”¨çš„æ˜¯@Retention(RetentionPolicy.SOURCE)ï¼Œåªèƒ½åœ¨æºæ–‡ä»¶ä¸­å‡ºç°
  * @author Kangjun
  *
  */

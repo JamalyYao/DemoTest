@@ -8,13 +8,13 @@ public class CalendarDemo {
 
 	public static void main(String[] args) {
 		Map<Integer,String> days = new HashMap<>();
-		days.put(Calendar.MONDAY, "³Ô·¹");
-		days.put(Calendar.TUESDAY, "³ª¸è");
-		days.put(Calendar.WEDNESDAY, "´òÅÆ");
-		days.put(Calendar.THURSDAY, "ÌßÇò");
-		days.put(Calendar.FRIDAY, "¿´µçÓ°");
-		days.put(Calendar.SATURDAY, "Ô¼»á");
-		days.put(Calendar.SUNDAY,"Ë¯¾õ");
+		days.put(Calendar.MONDAY, "åƒé¥­");
+		days.put(Calendar.TUESDAY, "å”±æ­Œ");
+		days.put(Calendar.WEDNESDAY, "æ‰“ç‰Œ");
+		days.put(Calendar.THURSDAY, "è¸¢çƒ");
+		days.put(Calendar.FRIDAY, "çœ‹ç”µå½±");
+		days.put(Calendar.SATURDAY, "çº¦ä¼š");
+		days.put(Calendar.SUNDAY,"ç¡è§‰");
 		
 		Calendar calendar = Calendar.getInstance();
 		int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);

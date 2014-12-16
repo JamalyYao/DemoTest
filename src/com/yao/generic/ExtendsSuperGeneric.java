@@ -40,12 +40,12 @@ public class ExtendsSuperGeneric {
 		fun2(infoO2);
 	}
 
-	//ÉèÖÃ·ºĞÍÉÏÏŞ,Ö»ÄÜ½ÓÊÜNumber¼°ÆäNumberµÄ×ÓÀà  
+	//è®¾ç½®æ³›å‹ä¸Šé™,åªèƒ½æ¥å—NumberåŠå…¶Numberçš„å­ç±»  
 	private static void fun(Info<? extends Number> info){
 		System.out.println(info);
 	}
 	
-	//ÉèÖÃ·ºĞÍÏÂÏŞ,Ö»ÄÜ½ÓÊÜStringºÍObjectÀàĞÍµÄ·ºĞÍ  
+	//è®¾ç½®æ³›å‹ä¸‹é™,åªèƒ½æ¥å—Stringå’ŒObjectç±»å‹çš„æ³›å‹  
 	private static void fun2(Info<? super String> info){
 		System.out.println(info);
 	}

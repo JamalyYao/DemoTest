@@ -1,11 +1,11 @@
 package com.yao.generic;
 
 class Demo{
-	public<T> T getValue(T val){
+	public <T> T getValue(T val){
 		return val;
 	}
 	
-	public<T> void getValue2(T val){
+	public <T> void getValue2(T val){
 		
 	}
 }

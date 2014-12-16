@@ -1,7 +1,7 @@
 package com.yao.init;
 
 /**
- * ³õÊ¼»¯£ºstatic Ä£¿é»òÕß static ±äÁ¿ ¿´ÆäÅÅÁÐµÄË³Ðò --¡·¸¸Àà±äÁ¿--¡·¸¸Àà¹¹ÔìÆ÷--¡·×ÓÀà±äÁ¿--¡·×ÓÀà¹¹ÔìÆ÷
+ * åˆå§‹åŒ–ï¼šstatic æ¨¡å—æˆ–è€… static å˜é‡ çœ‹å…¶æŽ’åˆ—çš„é¡ºåº --ã€‹çˆ¶ç±»å˜é‡--ã€‹çˆ¶ç±»æž„é€ å™¨--ã€‹å­ç±»å˜é‡--ã€‹å­ç±»æž„é€ å™¨
  * @author Kangjun
  *
  */

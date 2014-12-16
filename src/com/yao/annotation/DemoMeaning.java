@@ -5,10 +5,8 @@ import java.lang.reflect.Method;
 public class DemoMeaning {
 
 	//@Meaning(FromItemType.select)
-	//@Meaning(value = FromItemType.select)
-	@Meaning
-	@Deprecated
-	@SuppressWarnings("unchecked")
+	@Meaning(value = FromItemType.select)
+	//@Meaning
 	@Override
 	public String toString(){
 		return "DemoMeaning";

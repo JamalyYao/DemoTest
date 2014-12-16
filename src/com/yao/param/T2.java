@@ -4,12 +4,12 @@ public class T2 {
 
 	public static void main(String[] args) {
 		String str1 = "hello";
-		System.out.println("fun()·½·¨µ÷ÓÃÖ®Ç°£º"+str1);
+		System.out.println("fun()æ–¹æ³•è°ƒç”¨ä¹‹å‰ï¼š"+str1);
 		fun(str1);
-		System.out.println("fun()·½·¨µ÷ÓÃÖ®Ç°£º"+str1);
+		System.out.println("fun()æ–¹æ³•è°ƒç”¨ä¹‹å‰ï¼š"+str1);
 	}
 	public static void fun(String s2){
-		s2 = "MLDN";//Ö¸Ïò²»Í¬µÄÒıÓÃ
+		s2 = "MLDN";//æŒ‡å‘ä¸åŒçš„å¼•ç”¨
 	}
 
 }

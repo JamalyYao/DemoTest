@@ -6,13 +6,14 @@ class Demo3{
 public class T3 {
 
 	public static void main(String[] args) {
-		Demo3 d1 = new Demo3();
-		d1.temp = "world";
-		System.out.println("fun()·½·¨µ÷ÓÃÖ®Ç°£º"+d1.temp);
+		Demo d1 = new Demo();
+		d1.temp = 50;
+		System.out.println("fun()æ–¹æ³•è°ƒç”¨ä¹‹å‰ï¼š"+d1.temp);
+		//å¼•ç”¨ä¼ é€’
 		fun(d1);
-		System.out.println("fun()·½·¨µ÷ÓÃÖ®ºó£º"+d1.temp);
+		System.out.println("fun()æ–¹æ³•è°ƒç”¨ä¹‹åï¼š"+d1.temp);
 	}
-	public static void fun(Demo3 d2){
-		d2.temp = "MLDN";
+	public static void fun(Demo d2){
+		d2.temp = 1000;//ä¿®æ”¹äº†å†…å­˜å€¼
 	}
 }

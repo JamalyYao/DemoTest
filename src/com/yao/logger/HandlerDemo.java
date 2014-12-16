@@ -12,7 +12,7 @@ public class HandlerDemo {
 		Logger log = Logger.getLogger(HandlerDemo.class.getName());
 		log.setLevel(Level.CONFIG);
 		
-		FileHandler handler = new FileHandler("%h/config%g.log");//%h±íÊ¾ÔÚÓÃ»§µÄ¸ùÄ¿Â¼ÏÂ windows Îª C:\Users\Kangjun ÏÂ£¬%g±íÊ¾×Ô¶¯ÎªÎÄµµ±àºÅ
+		FileHandler handler = new FileHandler("%h/config%g.log");//%hè¡¨ç¤ºåœ¨ç”¨æˆ·çš„æ ¹ç›®å½•ä¸‹ windows ä¸º C:\Users\Kangjun ä¸‹ï¼Œ%gè¡¨ç¤ºè‡ªåŠ¨ä¸ºæ–‡æ¡£ç¼–å·
 		handler.setLevel(Level.CONFIG);
 		handler.setFormatter(new Formatter(){
 			public String format(LogRecord logRecord){
@@ -23,9 +23,9 @@ public class HandlerDemo {
 			}
 		});
 		
-		//log.setUseParentHandlers(false);²»Ê¹ÓÃ¸¸´¦ÀíÆ÷
+		//log.setUseParentHandlers(false);ä¸ä½¿ç”¨çˆ¶å¤„ç†å™¨
 		log.addHandler(handler);
-		log.config("Log ×éÌ¬Íê³É¡£");
-		//log.log(Level.INFO, "Info ĞÅÏ¢");
+		log.config("Log ç»„æ€å®Œæˆã€‚");
+		//log.log(Level.INFO, "Info ä¿¡æ¯");
 	}
 }

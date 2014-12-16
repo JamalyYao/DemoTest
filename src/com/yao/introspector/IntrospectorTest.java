@@ -6,47 +6,47 @@ import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
 
 /**
- * javaµÄ·´Éä¼¼Êõ£¬Ìá¹©¸øÁË¿ª·¢ÈËÔ±²Ù×÷³ÉÔ±±äÁ¿¡¢³ÉÔ±·½·¨ºÍ¹¹Ôìº¯ÊıµÈµÈ·½·¨¡£
- * ºÜ¶àÊ±ºò£¬³£³£ÒªÓÃ¶ÔÏóµÄÊôĞÔÀ´·â×°Êı¾İ£¬·´Éä¼¼ÊõÍê³ÉÕâÀà²Ù×÷¹ıÓÚ·±Ëö£¬ÓÚÊÇ¾ÍÓĞÁËÄÚÊ¡µÄ³öÏÖ£¬ËüµÄ×÷ÓÃ£¬¾ÍÊÇÓÃÀ´²Ù×÷¶ÔÏóµÄÊôĞÔµÄ£¬´ó´ó¼õÇá´úÂëÁ¿¡£
- * Ê×ÏÈÁË½âÒ»ÏÂÊ²Ã´ÊÇJavaBean:
- * javaBeanÆäÊµÊÇÒ»¸öjavaÀà£¬Ö»ÊÇÕâ¸öÀàÒªÓĞÒ»¶¨µÄ¹æ·¶£¬ÆäÀà±ØĞëÊÇ¾ßÌåºÍ¹«¹²µÄ£¬²¢ÇÒÒª¾ßÓĞÎŞ²ÎÊıµÄ¹¹Ôìº¯Êı¡£
+ * javaçš„åå°„æŠ€æœ¯ï¼Œæä¾›ç»™äº†å¼€å‘äººå‘˜æ“ä½œæˆå‘˜å˜é‡ã€æˆå‘˜æ–¹æ³•å’Œæ„é€ å‡½æ•°ç­‰ç­‰æ–¹æ³•ã€‚
+ * å¾ˆå¤šæ—¶å€™ï¼Œå¸¸å¸¸è¦ç”¨å¯¹è±¡çš„å±æ€§æ¥å°è£…æ•°æ®ï¼Œåå°„æŠ€æœ¯å®Œæˆè¿™ç±»æ“ä½œè¿‡äºç¹çï¼Œäºæ˜¯å°±æœ‰äº†å†…çœçš„å‡ºç°ï¼Œå®ƒçš„ä½œç”¨ï¼Œå°±æ˜¯ç”¨æ¥æ“ä½œå¯¹è±¡çš„å±æ€§çš„ï¼Œå¤§å¤§å‡è½»ä»£ç é‡ã€‚
+ * é¦–å…ˆäº†è§£ä¸€ä¸‹ä»€ä¹ˆæ˜¯JavaBean:
+ * javaBeanå…¶å®æ˜¯ä¸€ä¸ªjavaç±»ï¼Œåªæ˜¯è¿™ä¸ªç±»è¦æœ‰ä¸€å®šçš„è§„èŒƒï¼Œå…¶ç±»å¿…é¡»æ˜¯å…·ä½“å’Œå…¬å…±çš„ï¼Œå¹¶ä¸”è¦å…·æœ‰æ— å‚æ•°çš„æ„é€ å‡½æ•°ã€‚
  * @author Kangjun
  *
  */
 public class IntrospectorTest {
 
 	public static void main(String[] args) throws Exception {
-		test1(); //ÄÚÊ¡µÄ»ù±¾²Ù×÷
-		test2(); // Ö±½Ó»ñÈ¡Ä³¸öÊôĞÔµÄÊôĞÔÃèÊöÆ÷
+		test1(); //å†…çœçš„åŸºæœ¬æ“ä½œ
+		test2(); // ç›´æ¥è·å–æŸä¸ªå±æ€§çš„å±æ€§æè¿°å™¨
 	}
 
-	// Ö±½Ó»ñÈ¡Ä³¸öÊôĞÔµÄÊôĞÔÃèÊöÆ÷
+	// ç›´æ¥è·å–æŸä¸ªå±æ€§çš„å±æ€§æè¿°å™¨
 	private static void test2() throws Exception {
-		// Ö±½Ó»ñÈ¡PersonµÄnameÊôĞÔµÄÊôĞÔÃèÊöÆ÷
+		// ç›´æ¥è·å–Personçš„nameå±æ€§çš„å±æ€§æè¿°å™¨
 		PropertyDescriptor pd = new PropertyDescriptor("name", Person.class);
-		// ÓÉÊôĞÔ»ñµÃÆäsetName()·½·¨
+		// ç”±å±æ€§è·å¾—å…¶setName()æ–¹æ³•
 		Method write = pd.getWriteMethod();
 		Person p = new Person();
-		// Ö´ĞĞ·½·¨
+		// æ‰§è¡Œæ–¹æ³•
 		write.invoke(p, "java");
-		// »ñµÃgetName()·½·¨
+		// è·å¾—getName()æ–¹æ³•
 		Method read = pd.getReadMethod();
 		String name = (String) read.invoke(p);
 		System.out.println(name);
 	}
 
-	// ÄÚÊ¡µÄ»ù±¾²Ù×÷
+	// å†…çœçš„åŸºæœ¬æ“ä½œ
 	private static void test1() throws Exception {
-		// »ñÈ¡BeanĞÅÏ¢µÄ·â×°¶ÔÏó
+		// è·å–Beanä¿¡æ¯çš„å°è£…å¯¹è±¡
 		BeanInfo info = Introspector.getBeanInfo(Person.class);
-		// ÏÂÃæµÄÕâ¸öinfo²»»áÄÃµ½Æä¼Ì³ĞÏÂÀ´µÄÊôĞÔ
+		// ä¸‹é¢çš„è¿™ä¸ªinfoä¸ä¼šæ‹¿åˆ°å…¶ç»§æ‰¿ä¸‹æ¥çš„å±æ€§
 		// BeanInfo info = Introspector.getBeanInfo(Person.class,Object.class);
-		// µÃµ½ËùÓĞµÄÊôĞÔÃèÊöÆ÷
+		// å¾—åˆ°æ‰€æœ‰çš„å±æ€§æè¿°å™¨
 		PropertyDescriptor[] pds = info.getPropertyDescriptors();
 		for (PropertyDescriptor p : pds) {
-			// Í¨¹ıÊôĞÔÃèÊöÆ÷µÃµ½ÊôĞÔÃû
+			// é€šè¿‡å±æ€§æè¿°å™¨å¾—åˆ°å±æ€§å
 			System.out.println(p.getName());
-			// Í¨¹ıÊôĞÔÃèÊöÆ÷µÃµ½ÊôĞÔÀàĞÍ
+			// é€šè¿‡å±æ€§æè¿°å™¨å¾—åˆ°å±æ€§ç±»å‹
 			System.out.println(p.getPropertyType());
 		}
 	}
