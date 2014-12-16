@@ -7,7 +7,7 @@ import java.nio.channels.FileChannel;
 
 public class ReadBig {
 
-	public static String fff = "H://无线城市//代码备份//ROOT827.zip";
+	public static final String fff = "H://无线城市//代码备份//ROOT827.zip";
 
 	public static void main(String[] args) throws Exception {
 
