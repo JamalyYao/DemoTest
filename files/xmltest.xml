@@ -1,0 +1,24 @@
+
+memberInfoService.changeMemberType远程调用[会员权益变更接口]
+changemembertypereq
+request content : <?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<msgname>changemembertypereq</msgname>
+	<transactionid>8049217737340943</transactionid>
+	<timestamp>20141210172225</timestamp>
+	<result>0</result>
+	<body>
+		<usessionid>UDWXC0000001418200324203001000000000019yMpK6kOFk639spBRC
+		</usessionid>
+		<newtype>1</newtype>
+		<fromtype>000</fromtype>
+	</body>
+</root>
+changemembertypereq response content : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<msgname>changemembertyperesp</msgname>
+	<transactionid>8049217737340943</transactionid>
+	<timestamp>20141210172054</timestamp>
+	<result>303013</result>
+	<resultdesc>Authenticate ProductOrder failed</resultdesc>
+</root>
