@@ -1,18 +1,18 @@
 package com.yao.proxy;
 
 /**
- * ÕæÕıÖ´ĞĞÈÎÎñµÄÀà£¬ÊµÏÖÁË´úÀí½Ó¿Ú¡£
+ * çœŸæ­£æ‰§è¡Œä»»åŠ¡çš„ç±»ï¼Œå®ç°äº†ä»£ç†æ¥å£ã€‚
  */
 public class RealSubject implements Subject {
 
 	/**
-	 * Ö´ĞĞ¸ø¶¨Ãû×ÖµÄÈÎÎñ¡£ÕâÀï´òÓ¡³öÈÎÎñÃû£¬²¢ĞİÃß500msÄ£ÄâÈÎÎñÖ´ĞĞÁËºÜ³¤Ê±¼ä
+	 * æ‰§è¡Œç»™å®šåå­—çš„ä»»åŠ¡ã€‚è¿™é‡Œæ‰“å°å‡ºä»»åŠ¡åï¼Œå¹¶ä¼‘çœ 500msæ¨¡æ‹Ÿä»»åŠ¡æ‰§è¡Œäº†å¾ˆé•¿æ—¶é—´
 	 * 
 	 * @param taskName
 	 */
 	@Override
 	public void dealTask(String taskName) {
-		System.out.println("ÕıÔÚÖ´ĞĞÈÎÎñ£º" + taskName);
+		System.out.println("æ­£åœ¨æ‰§è¡Œä»»åŠ¡ï¼š" + taskName);
 		try {
 			Thread.sleep(500);
 		} catch (InterruptedException e) {
