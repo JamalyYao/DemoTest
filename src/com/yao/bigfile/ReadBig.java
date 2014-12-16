@@ -8,13 +8,13 @@ import java.nio.channels.FileChannel;
 
 public class ReadBig {
 
-	public static final String fff = "D://log//192.168.56.1_debug_.log_2014-12-04";
+	public static final String fileName = "D://log//192.168.56.1_debug_.log_2014-12-04";
 
 	public static void main(String[] args) throws IOException {
 
 		final int BUFFER_SIZE = 0x300000;// 缓冲区大小为3M
 
-		File f = new File(fff);
+		File file = new File(fileName);
 
 		/**
 		 * map(FileChannel.MapMode mode,long position, long size) mode -
@@ -26,8 +26,8 @@ public class ReadBig {
 		 * f.length()*7/8,f.length()/8)
 		 * 想读取文件所有内容，需要这样写map(FileChannel.MapMode.READ_ONLY, 0,f.length())
 		 */
-		RandomAccessFile raf = new RandomAccessFile(f, "r");
-		MappedByteBuffer inputBuffer = raf.getChannel().map(FileChannel.MapMode.READ_ONLY, f.length() / 2, f.length() / 2);
+		RandomAccessFile raf = new RandomAccessFile(file, "r");
+		MappedByteBuffer inputBuffer = raf.getChannel().map(FileChannel.MapMode.READ_ONLY, file.length() / 2, file.length() / 2);
 
 		byte[] dst = new byte[BUFFER_SIZE];// 每次读出3M的内容
 
