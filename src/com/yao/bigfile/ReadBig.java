@@ -1,6 +1,7 @@
 package com.yao.bigfile;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
@@ -9,7 +10,7 @@ public class ReadBig {
 
 	public static final String fff = "D://log//192.168.56.1_debug_.log_2014-12-04";
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws IOException {
 
 		final int BUFFER_SIZE = 0x300000;// 缓冲区大小为3M
 
@@ -25,8 +26,8 @@ public class ReadBig {
 		 * f.length()*7/8,f.length()/8)
 		 * 想读取文件所有内容，需要这样写map(FileChannel.MapMode.READ_ONLY, 0,f.length())
 		 */
-
-		MappedByteBuffer inputBuffer = new RandomAccessFile(f, "r").getChannel().map(FileChannel.MapMode.READ_ONLY, f.length() / 2, f.length() / 2);
+		RandomAccessFile raf = new RandomAccessFile(f, "r");
+		MappedByteBuffer inputBuffer = raf.getChannel().map(FileChannel.MapMode.READ_ONLY, f.length() / 2, f.length() / 2);
 
 		byte[] dst = new byte[BUFFER_SIZE];// 每次读出3M的内容
 
@@ -55,6 +56,7 @@ public class ReadBig {
 
 		}
 
+		raf.close();
 		long end = System.currentTimeMillis();
 
 		System.out.println("读取文件文件一半内容花费：" + (end - start) + "毫秒");
